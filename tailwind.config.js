@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./portfolio.html"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        Poppins: ['Poppins', 'sans-serif'], // 'roboto' is the key you'll use in the class
+      },
+    },
+      
   },
   plugins: [],
 }

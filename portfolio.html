@@ -5,22 +5,79 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="./style.css" rel="stylesheet">
+
 </head>
 
 <body>
 
   <!--Navbar-->
-  <div class="flex flex-row ">
+  <div class="flex flex-row justify-between  px-16 py-2 shadow-sm">
     <!--1 er block-->
-    <p class="text-3xl font-bold">Portflio</p>
+    <p class="text-2xl  font-bold cursor-pointer hover:text-blue-400 font-Poppins">Portfolio</p>
     <!--2 er block-->
-    <div class="flex flex-row gap-2 ">
+    <div class="lg:flex flex-row gap-5  hidden ">
       <!--gap pour faire espace entre les blocks /// flex-row pour apgner les elements dans une seule pgne-->
-      <p>Home</p>
-      <p>Education</p>
-      <p>Experience</p>
-      <p>Contact</p>
+      <p class=" cursor-pointer hover:text-blue-400 font-semibold text-lg font-Poppins">Home</p>
+      <p class=" cursor-pointer hover:text-blue-400 font-semibold text-lg font-Poppins">Education</p>
+      <p class=" cursor-pointer hover:text-blue-400 font-semibold text-lg font-Poppins">Experience</p>
+      <p class=" cursor-pointer hover:text-blue-400 font-semibold text-lg font-Poppins">Skills</p>
+      <p class=" cursor-pointer hover:text-blue-400 font-semibold text-lg font-Poppins">Contact</p>
     </div>
+
+  </div>
+  <!--Header-->
+  <section class="lg:px-20 px-2 py-20 w-full bg-cover bg-no-repeat bg-center"
+    style="background-image: url(/images/img1.jpg)">
+    <div class="flex flex-col gap-4 lg:w-1/2 w-full lg:px-20 px-5 ">
+      <div class="flex flex-row gap-2 items-center">
+        <p class="text-white lg:text-5xl text-2xl font-bold font-Poppins">Hi,</p>
+        <p class="text-blue-400 lg:text-4xl text-xl font-bold font-Poppins">I'am Lyza</p>
+      </div>
+
+      <p class="text-white lg:text-4xl text-xl font-bold font-Poppins">I'am a web developer</p>
+      <a href="#id" class="bg-blue-400 p-2 rounded-lg cursor-pointer flex justify-center w-1/3 ">
+        <p>Contact me</p>
+      </a>
+  </section>
+  <!--Mon Education-->
+  <section class="flex flex-col mt-10">
+    <p class="text-5xl text-gray-800 flex justify-center font-Poppins font-extrabold">Education</p>
+    <div class="flex lg:flex-row flex-col lg:px-0 px-10 justify-center gap-10 mt-10">
+      <!--bac-->
+      <div class="flex flex-col gap-2 border rounded-lg shadow-lg justify-center p-5 items-center ">
+        <img src="images/bac.jpg" alt="" class="rounded-lg  w-60">
+        <p class="text-gray-700 text-xl font-Poppins font-medium ">2016-2017</p>
+        <p class="text-blue-500  text-2xl font-Poppins font-bold  ">Bac</p>
+      </div>
+      <!--Licence-->
+      <div class="flex flex-col gap-2 border rounded-lg shadow-lg justify-center ">
+        <p>2016-2017</p>
+        <p>Licence</p>
+      </div>
+      <!--Master-->
+      <div class="flex flex-col gap-2 border rounded-lg shadow-lg justify-center ">
+        <p>2016-2017</p>
+        <p>Master</p>
+      </div>
+    </div>
+  </section>
+  <!--Mon Experience-->
+  <section class="flex flex-col mt-10">
+    <p class="text-5xl text-gray-800 flex justify-center font-Poppins font-extrabold">Experience</p>
+
+  </section>
+  <!--Skills-->
+  <section class="flex flex-col mt-10">
+    <p class="text-5xl text-gray-800 flex justify-center font-Poppins font-extrabold">Skills</p>
+
+  </section>
+  <!--Contact-->
+  <section class="flex flex-col mt-10">
+    <p class="text-5xl text-gray-800 flex justify-center font-Poppins font-extrabold">Contact</p>
+
+  </section>
+
 
   </div>
 </body>
